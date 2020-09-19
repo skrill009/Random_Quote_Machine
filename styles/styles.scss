@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body {
+  background-color: rgb(240, 111, 111);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 450px;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 1em;
+  color: white;
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+div {
+  position: relative;
+}
+
+.quote-box {
+  background-color: white;
+  width: 450px;
+  text-align: center;
+  display: table;
+  position: relative;
+  padding: 40px 50px;
+  border-radius: 3px;
+  .quote-text {
+    i {
+      font-size: 1em;
+      margin-right: 0.4 em;
+    }
+    text-align: center;
+    height: auto;
+    font-weight: 500;
+    font-size: 1.75em;
+  }
+  .quote-author {
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding: 20px;
+    text-align: right;
+    font-size: 1.5em;
+  }
+  .buttons {
+    width: 450px;
+    margin: auto;
+    display: block;
+  }
+  .button {
+    height: 38px;
+    padding: 8px 18px 8px 18px;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(240, 111, 111);
+    border: none;
+    margin-top: 30px;
+    outline: none;
+    font-size: 1em;
+    opacity: 1;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+    &#tweet-quote {
+      float: left;
+      padding: 0px;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 1.2em;
+      height: 30px;
+      width: 40px;
+      margin-right: 5px;
+    }
+    &#new-quote {
+      float: right;
+    }
+  }
+}
